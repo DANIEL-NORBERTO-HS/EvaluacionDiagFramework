@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa para controlar una alcancía.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="funcionesAlcancia.js" language="Javascript"></script>
+
+</head>
+<body class="container">
+    <h1 style="text-align: center;">Alcancia</h1>
+
+    <form id="moneyForm" style="text-align: center;" onsubmit="">
+        <div class="form-group row">
+            <div class="col-xs-2">
+              <label for="mxn1">Moneda de $1:</label>
+              <input class="form-control" id="mxn1" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn2">Moneda de $2:</label>
+                <input class="form-control" id="mxn2" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn5">Moneda de $5:</label>
+                <input class="form-control" id="mxn5" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn10">Moneda de $10:</label>
+                <input class="form-control" id="mxn10" type="number" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-xs-2">
+              <label for="mxn20">Billete de $20:</label>
+              <input class="form-control" id="mxn20" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn50">Billete de $50:</label>
+                <input class="form-control" id="mxn50" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn100">Billete de $100:</label>
+                <input class="form-control" id="mxn100" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn100">Billete de $200:</label>
+                <input class="form-control" id="mxn200" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn500">Billete de $500:</label>
+                <input class="form-control" id="mxn500" type="number" min="0" value="0">
+            </div>
+            <div class="col-xs-2">
+                <label for="mxn1000">Billete de $1,000:</label>
+                <input class="form-control" id="mxn1000" type="number" min="0" value="0">
+            </div>
+        </div>
+        <input type="submit" class="btn btn-success" value="Meter dinero" onclick="meterDinero()">
+    </form>
+</body>
+</html>
